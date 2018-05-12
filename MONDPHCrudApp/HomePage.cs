@@ -1,4 +1,5 @@
-﻿using Xamarin.Forms;
+﻿using MONDPHCrudApp.ViewModels;
+using Xamarin.Forms;
 
 namespace MONDPHCrudApp
 {
@@ -7,6 +8,7 @@ namespace MONDPHCrudApp
         public HomePage()
         {
             InitializeComponent();
+            BindingContext = new HomePageViewModel();
         }
     }
 }
